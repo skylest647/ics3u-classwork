@@ -24,7 +24,9 @@ while running:
     pygame.draw.rect(screen, (13, 71 , 1),(0,380,1000,100))
     pygame.draw.circle(screen, (white),(100, 70), 50 )
     #ghost
+    #rectangle always screen, colour rgb, x location, y location, x size, y size.
     pygame.draw.rect(screen, (white),(ghostx, ghosty,20,50))
+    #circle always screen, colour rgb, x location, y location, circle size
     pygame.draw.circle(screen, (white),(ghostx + 10, ghosty + 2), 10 )
     pygame.draw.circle(screen, (black),(ghostx + 14, ghosty ), 3 )
     pygame.draw.circle(screen, (black),(ghostx + 5, ghosty ), 3 )
@@ -50,5 +52,6 @@ while running:
     pygame.draw.polygon(screen, (87, 7, 7), ((290,150),(610,150),(450,50)))
     pygame.draw.rect(screen, (50, 7 , 7),(430, 300,50,100))
     pygame.draw.circle(screen, (255,255,0),(470, 350 ), 3 )
+    
     pygame.display.flip()
     clock.tick(30)
